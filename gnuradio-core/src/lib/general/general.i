@@ -60,6 +60,7 @@
 #include <gr_interleaved_short_to_complex.h>
 //#include <gr_endianness.h>
 #include <gr_firdes.h>
+#include <gr_optfir.h>
 #include <gr_interleave.h>
 #include <gr_deinterleave.h>
 #include <gr_delay.h>
@@ -177,6 +178,7 @@
 //%include "gr_endianness.i"
 %include "gr_interleaved_short_to_complex.i"
 %include "gr_firdes.i"
+%include "gr_optfir.i"
 %include "gr_interleave.i"
 %include "gr_deinterleave.i"
 %include "gr_delay.i"

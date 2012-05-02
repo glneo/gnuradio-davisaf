@@ -240,6 +240,7 @@ set(gr_core_general_triple_threats
     gr_nop
     gr_null_sink
     gr_null_source
+    gr_optfir
     gr_pa_2x2_phase_combiner
     gr_packet_sink
     gr_peak_detector2_fb
