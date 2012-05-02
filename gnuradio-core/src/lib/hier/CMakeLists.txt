@@ -23,11 +23,15 @@
 include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 
 list(APPEND gnuradio_core_sources
+    ${CMAKE_CURRENT_SOURCE_DIR}/gr_blks2_am_demod.cc
     ${CMAKE_CURRENT_SOURCE_DIR}/gr_channel_model.cc
+    ${CMAKE_CURRENT_SOURCE_DIR}/gr_demod_10k0a3e_cf.cc
 )
 
 install(FILES
+    ${CMAKE_CURRENT_SOURCE_DIR}/gr_blks2_am_demod.h
     ${CMAKE_CURRENT_SOURCE_DIR}/gr_channel_model.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/gr_demod_10k0a3e_cf.h
     DESTINATION ${GR_INCLUDE_DIR}/gnuradio
     COMPONENT "core_devel"
 )
@@ -35,7 +39,9 @@ install(FILES
 if(ENABLE_PYTHON)
     install(FILES
         ${CMAKE_CURRENT_SOURCE_DIR}/hier.i
+        ${CMAKE_CURRENT_SOURCE_DIR}/gr_blks2_am_demod.i
         ${CMAKE_CURRENT_SOURCE_DIR}/gr_channel_model.i
+        ${CMAKE_CURRENT_SOURCE_DIR}/gr_demod_10k0a3e_cf.i
         DESTINATION ${GR_INCLUDE_DIR}/gnuradio/swig
         COMPONENT "core_swig"
     )
